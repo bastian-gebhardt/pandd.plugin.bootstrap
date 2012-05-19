@@ -1,0 +1,33 @@
+<project name="bootstrap" basedir="." xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+    <description>
+    	build file for developing new pandd plugins
+    </description>
+
+	<artifact:pom id="pomfile" file="pom.xml" />
+
+	<target name="clean">
+			<delete includeEmptyDirs="true">
+				<fileset dir="dist/compiled" includes="**/*" />
+				<fileset dir="dist" includes="*.jar" />
+			</delete>
+	</target>		
+		
+	<target name="m2_package" depends="clean" >
+		<defaultexcludes remove="**/.gitignore"/>
+		<zip destfile="dist/${pomfile.artifactId}-${pomfile.version}.jar" >
+			<zipfileset dir="src/" />
+		</zip>
+		<defaultexcludes add="**/.gitignore"/>
+	</target>
+	<target name="m2_install" depends="m2_package" >
+		<artifact:install file="dist/${pomfile.artifactId}-${pomfile.version}.jar">
+		    <pom refid="pomfile"/>
+		</artifact:install>
+	</target>
+	<target name="m2_deploy" depends="m2_install" >
+	  <artifact:deploy file="dist/${pomfile.artifactId}-${pomfile.version}.jar">
+	    <pom refid="pomfile"/>
+	  </artifact:deploy>
+	</target>	
+
+</project>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project>
+<project name="pandd_bootstrap_dev" basedir="." xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+    <description>
+    	provides the developing time bootstrap file
+    </description>
+
+	<target name="_provide" >
+        <copy file="lib/de/bgeb/pandd/bootstrap/pandd_dist.php" tofile="pandd.php" />
+        <replace file="pandd.php" token="@add_environment_here@" value="development"/>
+	</target>
+	
+</project>
