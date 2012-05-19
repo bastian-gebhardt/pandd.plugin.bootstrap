@@ -1,0 +1,13 @@
+/.project
+/.buildpath
+/.classpath
+/.settings
+/dist/*
+/dist/*/
+!/dist/compiled
+/dist/compiled/*/
+!/dist/compiled/.gitignore
+/lib/*
+/lib/*/
+!/lib/.gitignore
+/setup.xml
