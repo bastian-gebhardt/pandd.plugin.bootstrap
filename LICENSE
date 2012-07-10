@@ -1,5 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
+License of pandd plugin bootstrap
+
+The pandd plugin bootstrap is free software. 
+It is released under the terms of the following BSD License.
+
+
 Copyright © 2012 by Bastian Gebhardt
 All rights reserved.
 
@@ -23,16 +27,3 @@ SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
 CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, 
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE 
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
--->
-<!DOCTYPE project>
-<project name="pandd_bootstrap_dev" basedir="." xmlns:artifact="antlib:org.apache.maven.artifact.ant">
-    <description>
-    	provides the developing time bootstrap file
-    </description>
-
-	<target name="_provide" >
-        <copy file="lib/de/bgeb/pandd/bootstrap/pandd_dist.php" tofile="pandd.php" />
-        <replace file="pandd.php" token="@add_environment_here@" value="development"/>
-	</target>
-	
-</project>
