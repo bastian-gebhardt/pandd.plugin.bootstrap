@@ -3,16 +3,10 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   
-	<name>bootstrap</name>
+  <name>bootstrap</name>
 
-      <parent>
-      	<groupId>de.bgeb</groupId>
-      	<artifactId>bgeb-superpom</artifactId>
-      	<version>1.0.0</version>
-      </parent>
+  <groupId>de.bgeb.pandd.plugin</groupId>
+  <artifactId>bootstrap</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
 
-	<groupId>de.bgeb.pandd</groupId>
-    <artifactId>bootstrap</artifactId>
-    <version>1.0.0</version>
-  
 </project>

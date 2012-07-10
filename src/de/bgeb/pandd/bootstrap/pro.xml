@@ -25,7 +25,7 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 <!DOCTYPE project>
-<project name="pandd_bootstrap_pro" basedir="." xmlns:artifact="antlib:org.apache.maven.artifact.ant">
+<project name="pandd.plugin.bootstrap.pro" basedir="." xmlns:artifact="antlib:org.apache.maven.artifact.ant">
     <description>
     	provides the production time bootstrap file
     </description>
