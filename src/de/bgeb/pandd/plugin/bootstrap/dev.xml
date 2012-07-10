@@ -31,7 +31,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </description>
 
 	<target name="_provide" >
-        <copy file="lib/de/bgeb/pandd/bootstrap/pandd_dist.php" tofile="pandd.php" />
+        <copy file="lib/de/bgeb/pandd/plugin/bootstrap/pandd_dist.php" tofile="pandd.php" />
         <replace file="pandd.php" token="@add_environment_here@" value="development"/>
 	</target>
 	
