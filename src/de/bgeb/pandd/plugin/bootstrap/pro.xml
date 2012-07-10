@@ -30,7 +30,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     	provides the production time bootstrap file
     </description>
 
-	<target name="_provide" >
+	<target name="pandd.bootstrap.pro.run" >
         <copy file="lib/de/bgeb/pandd/plugin/bootstrap/pandd_dist.php" tofile="dist/compiled/pandd.php" />
         <replace file="dist/compiled/pandd.php" token="@add_environment_here@" value="production"/>
 	</target>
